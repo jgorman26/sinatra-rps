@@ -27,14 +27,10 @@ get("/") do
 end
 
 get("/rock") do
-  1.times do
-    @move = rand(1..3)
-    if @move == 1
-      @move = "rock"
-    elsif @move == 2
-      @move = "paper"
-    else
-      @move = "scissors"
-    end
-  erb(:rock)
+end
+
+get("/paper") do
+end
+
+get("/scissors") do
 end
